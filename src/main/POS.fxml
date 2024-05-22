@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleMainClick" prefHeight="720.0" prefWidth="1280.0" stylesheets="/resources/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.POSController">
+    <children>
+      <ImageView fx:id="loadingGif" fitHeight="100.0" fitWidth="100.0" layoutX="400.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+      <ScrollPane id="category" fitToWidth="true" layoutY="55.0" prefHeight="667.0" prefWidth="126.0" styleClass="scroll-bar">
+         <content>
+            <VBox id="category" fx:id="categoryContainer" alignment="CENTER" prefHeight="665.0" prefWidth="124.0" spacing="5.0" />
+         </content>
+      </ScrollPane>
+      <AnchorPane id="category_top" prefHeight="55.0" prefWidth="133.0">
+         <children>
+            <Label id="category_title" layoutX="20.0" layoutY="19.0" text="Categories" />
+         </children>
+      </AnchorPane>
+        <AnchorPane id="nav" layoutX="126.0" prefHeight="80.0" prefWidth="1155.0">
+            <children>
+            <ImageView fx:id="logoNavBar" fitHeight="31.0" fitWidth="40.0" layoutX="21.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                <Label id="posmart" layoutX="70.0" layoutY="30.0" text="POSMart">
+                </Label>
+                <Label id="pmorgis-pos" fx:id="titleLabel" layoutX="210.0" layoutY="30.0" text="Point of Sale System" />
+                <Line endX="100.0" endY="20.0" layoutX="90.0" layoutY="39.0" startX="100.0" startY="-20.0" stroke="WHITE" strokeWidth="2.0" />
+                <ImageView fx:id="exitButton" fitHeight="49.0" fitWidth="36.0" layoutX="1073.0" layoutY="19.0" onMouseClicked="#handleExit" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+            <Label id="pmorgis-pos" fx:id="titleLabel1" layoutX="944.0" layoutY="17.0" text="Admin Mode" />
+            <ImageView fx:id="adminToggle" fitHeight="29.0" fitWidth="67.0" layoutX="959.0" layoutY="40.0" onMouseClicked="#handleAdminToggle" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+            <ImageView fx:id="salesButton" fitHeight="36.0" fitWidth="36.0" layoutX="420.0" layoutY="16.0" onMouseClicked="#handleSales" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+            <Label id="top-button" fx:id="salesLabel" layoutX="420.0" layoutY="52.0" onMouseClicked="#handleSales" text="Sales" textAlignment="CENTER" />
+            <Label id="top-button" fx:id="passwordLabel" layoutX="584.0" layoutY="52.0" onMouseClicked="#handlePasswordChange" text="Password" textAlignment="CENTER" />
+            <Label id="top-button" fx:id="weeklyLabel" layoutX="473.0" layoutY="52.0" onMouseClicked="#handleWeekly" text="Weekly Report" textAlignment="CENTER" />
+            <ImageView fx:id="weeklyButton" fitHeight="36.0" fitWidth="36.0" layoutX="493.0" layoutY="14.0" onMouseClicked="#handleWeekly" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+            <ImageView fx:id="passwordButton" fitHeight="36.0" fitWidth="63.0" layoutX="584.0" layoutY="17.0" onMouseClicked="#handlePasswordChange" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+            <ImageView fx:id="addCategoryButton" fitHeight="26.0" fitWidth="26.0" layoutX="692.0" layoutY="19.0" onMouseClicked="#handleAddCategory" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+            <Label id="top-button" fx:id="categoryText" layoutX="666.0" layoutY="52.0" text="Add Category" textAlignment="CENTER" />
+         
+            </children>
+        </AnchorPane>
+        <SplitPane dividerPositions="1.0" layoutX="126.0" layoutY="80.0" onMouseClicked="#handleMainClick" prefHeight="640.0" prefWidth="1155.0">
+            <items>
+              <AnchorPane fx:id="productsPane" prefHeight="638.0" prefWidth="759.0" styleClass="main-bg">
+                  <children>
+                  <ImageView fx:id="addProductButton" fitHeight="26.0" fitWidth="26.0" layoutX="170.0" layoutY="43.0" onMouseClicked="#handleAddProduct" pickOnBounds="true" preserveRatio="true" styleClass="imageButton" />
+                      <Label id="products-text" layoutX="50.0" layoutY="44.0" text="Products" />
+                      <ImageView fx:id="search" fitHeight="40.0" fitWidth="365.0" layoutX="209.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+                      <TextArea id="searchText" fx:id="searchText" focusTraversable="false" layoutX="265.0" layoutY="39.0" onKeyPressed="#handleSearch" prefHeight="30.0" prefWidth="300.0">
+                          <font>
+                              <Font size="16.0" />
+                          </font>
+                      </TextArea>
+                  <GridPane fx:id="productsGrid" gridLinesVisible="false" layoutX="15.0" layoutY="136.0" prefHeight="392" prefWidth="670.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="136.0">                
+                      <columnConstraints>
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                          <RowConstraints maxHeight="141.60001220703126" minHeight="150.0" prefHeight="150" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="141.60001220703126" minHeight="150.0" prefHeight="150" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="141.60001220703126" minHeight="150.0" prefHeight="150" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                  </GridPane>
+
+                  </children>
+              </AnchorPane>
+                <AnchorPane maxHeight="1155.0" maxWidth="800.0" minHeight="0.0" minWidth="400.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="myCart" layoutX="41.0" layoutY="141.0" prefHeight="294.0" prefWidth="318.0" />
+                  <Label layoutX="35.0" layoutY="48.0" text="My Cart">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                
+                  <Button id="checkoutButton" fx:id="checkout" layoutX="24.0" layoutY="572.0" mnemonicParsing="false" onMouseClicked="#handleCheckoutButton" prefHeight="55.0" prefWidth="366.0" text="Checkout" />
+                  <Label fx:id="total" layoutX="41.0" layoutY="507.0" text="Total:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                    <Button layoutX="26.0" layoutY="534.0" onAction="#clearProductBTNClicked" styleClass="imageButton" text="Clear Cart" />
+               </children></AnchorPane>
+            </items>
+        </SplitPane>
+      
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+2024-05-18 20:07:49
+Brocoli | 20.0 | Vegetable | Brocoli.png
+Cabbage | 20.0 | Vegetable | Cabbage.png
+1244 | 232.0 | Vegetable | 1244.png
+Prod2 | 52.0 | Vegetable | Prod2.png
+jose | 123.0 | Vegetable | jose.png
+try | 122.0 | Meat | try.png
+a | 1.0 | Vegetable | a.png
+12 | 23.0 | Vegetable | 12.png
+jose | 123.0 | Vegetable | jose.png
+jose | 12.0 | Poultry | jose.png
+wew | 123.0 | test | wew.png
+test | 10.0 | Vegetables | test.png
+wat | 10.0 | Fruits | wat.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+test1 | 10.0 | Meat | test1.png
+catdog | 10.0 | cat test | catdog.png
+jose | 10.0 | Vegetables | jose.png
+jose | 10.0 | Grocery | jose.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+test | 10.0 | Grocery | test.png
+jose | 15.0 | Grocery | jose.png

@@ -1,0 +1,5 @@
+2024-01-18 16:29:18
+Brocoli | 360.0 | Vegetable | Brocoli.png
+Potato | 56.0 | Vegetable | Potato.png
+Tomato | 60.0 | Vegetable | Tomato.png
+Cabbage | 50.0 | Vegetable | Cabbage.png

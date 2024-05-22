@@ -1,0 +1,66 @@
+/* Styles.css */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
+#category {
+    -fx-background-color: linear-gradient(to bottom, #80DBCA, rgba(47.83, 194.98, 164.97, 0.97), rgba(255, 255, 255, 0));
+}
+
+#nav {
+    -fx-background-color: #0077B6;
+}
+
+.category_label {
+    -fx-font-family: 'Roboto';
+    -fx-alignment: center;
+}
+
+#category_title {
+    -fx-font: 18px 'Roboto Bold';
+    -fx-alignment: center;
+}
+
+#pmorgis-pos {
+    -fx-text-fill: white;
+    -fx-font: 18px 'Roboto Bold';
+    -fx-alignment: center;
+}
+
+#products-text {
+    -fx-text-fill: black;
+    -fx-font: 18px 'Roboto Bold';
+}
+
+.text-area {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+#product-label{
+    -fx-text-fill: #0077B6;
+    -fx-font: 16px 'Roboto Bold';
+    -fx-alignment: center;
+}
+
+#product-price{
+    -fx-text-fill: black;
+}
